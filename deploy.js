@@ -18,9 +18,9 @@ async function main() {
 
   const DutchAuction = await ethers.getContractFactory("DutchAuction", deployer)
   const auction = await DutchAuction.deploy(
-    ethers.utils.parseEther('2.0'),
-    1,
-    "Motorbike"
+    ethers.utils.parseEther('100.0'),
+    ethers.utils.parseEther('1.0'),
+    "Test item"
   )
   await auction.deployed()
 

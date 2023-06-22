@@ -15,7 +15,7 @@ contract DutchAuction {
     event Bought(uint price, address buyer);
 
     constructor(uint _startingPrice, uint _discountRate, string memory _item) {
-        require(_startingPrice >= _discountRate * DURATION, "price too low!");
+        //require(_startingPrice >= _discountRate * DURATION, "price too low!");
         seller = payable(msg.sender);
         startingPrice = _startingPrice;
         discountRate = _discountRate;
